@@ -43,7 +43,7 @@ def GetText(url):
         title = soup.find('h1',class_ = 'article-title') 
         SaveText(title.text,content.text) 
 def SaveText(TextTitle,text): 
-    f = open(str(TextTitle)+'txt','w') 
+    f = open(str(TextTitle)+'.txt','w') 
     f.write(text) 
     f.close() 
 while num<=100: 
